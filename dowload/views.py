@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render
 from django.views.generic.edit import FormView
-from project.dowload.forms import MailForm
+from dowload.forms import MailForm
 from .tasks import download_and_convert_to_mp3
 import os
 from .tasks import send_email

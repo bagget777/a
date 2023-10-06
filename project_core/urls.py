@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from dowload.views import MailFormView, thank_you, error
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('project_core.urls'))
+    path('', include('dowload.urls')),
 ]
